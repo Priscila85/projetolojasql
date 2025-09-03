@@ -3,6 +3,7 @@
 
 include ("aula8c.php");//importei a classe Pessoa
 
+
 $pessoa = new Pessoa("Castanho", "Castanhos", 1.72, 84, "Marcio", "Branca", "PHP");
 
 //apresentar a pessoa
@@ -24,6 +25,9 @@ if ($pessoa->nome == "Bianca") {
 } else {
     echo "<br><br>Você não informou um nome valido";
 }
+
+
+
 
 
 ?>
