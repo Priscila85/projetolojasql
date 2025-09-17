@@ -1,3 +1,5 @@
+<?php require("conexao.php"); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -63,6 +65,42 @@
             </div>
         </div>
     </nav>
+    <?php
+    //criar a query para listar os produtos
+    $sql = "SELECT * FROM produtos";
+    //executar a query
+    $listar = $conexao->query($sql); 
+    //transformar o resultado em um array
+    //mostra o resultado na tela
+    if($listar->num_rows > 0) {
+        //tem produto
+        while($linha = $listar->fetch_assoc()) {
+            //mostrar os dados na tela
+            echo '
+                <div class="col mb-5">
+                    <div class="card h-100 mi-bolder cor-corpo">
+                        <img class="card-img-top" src="assets/' . $linha["imagem"] . '"
+                            alt="Bolsa ecológica com a frase Gato é perfeito, afinal errar é humano." />
+                        <div class="card-body p-4">
+                            <div class="text-center text-pink">
+                                <h5 class="mi-bolder">' . $linha["nome_produto"] . '</h5>
+                                R$' . $linha["preco_unitario"] . ',00
+                            </div>
+                            </div>
+                        </div>
+                       <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
+                        </div>
+                    </div>
+                </div>
+            ';
+          
+        }
+        
+    } else {
+        echo "<br><p>Não tem produto cadastrado.</p>";
+    }
+    ?>
 
 </body>
 

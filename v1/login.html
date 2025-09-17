@@ -15,14 +15,11 @@
     <!--estilo do site apagar o -->
     <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/apple-touch-icon.png"
         sizes="180x180">
-    <link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32"
-        type="image/png">
-    <link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16"
-        type="image/png">
+
     <link rel="manifest" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/safari-pinned-tab.svg"
         color="#712cf9">
-    <link rel="icon" href="https://getbootstrap.com/docs/5.3/assets/img/favicons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <meta name="theme-color" content="#712cf9">
     <link href="https://getbootstrap.com/docs/5.3/examples/sign-in/sign-in.css" rel="stylesheet"> <!--estilo do site-->
     <link href="css/styles.css" rel="stylesheet" />
@@ -170,13 +167,12 @@
 </head>
 
 
-<body class="d-flex align-items-center py-4 bg-aqua">
+<body class="cor-corpo">
     <!-- Navegação -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-topo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-topo">
 
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand mi-bolder" href="#!">Mimi Lovers Shop</a>
+        <div class="container px-4 px-lg-5">
+                <a class="navbar-brand mi-bolder" href="">Mimi Lovers Shop</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -211,7 +207,7 @@
                             <span class="badge badge-carrinho ms-1 rounded-pill">0</span>
                         </button>
                     </form>
-                    
+
                 </div>
             </div>
         </nav>
@@ -238,11 +234,11 @@
                 d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z">
             </path>
         </symbol>
-     <span class="visually-hidden" id="bd-theme-text">
-                <font dir="auto" style="vertical-align: inherit;">
-                    <font dir="auto" style="vertical-align: inherit;">Alternar tema</font>
-                </font>
-            </span> </button>
+        <span class="visually-hidden" id="bd-theme-text">
+            <font dir="auto" style="vertical-align: inherit;">
+                <font dir="auto" style="vertical-align: inherit;">Alternar tema</font>
+            </font>
+        </span> </button>
         <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
             <li> <button type="button" class="dropdown-item d-flex align-items-center active"
                     data-bs-theme-value="light" aria-pressed="true"> <svg class="bi me-2 opacity-50" aria-hidden="true">
@@ -281,140 +277,139 @@
                     </svg>
                 </button> </li>
         </ul>
-    </div>
-    <main class="form-signin w-100 m-auto">
-        <form action="php/verificaLogin.php" method="post">
-            <img class="mb-4" src="assets/gatinha.png " alt="gatinha fofinha" width="150" height="150">
-            <h1 class="text-pink">
-                <font dir="auto" style="vertical-align: inherit;">
-                    <font dir="auto" style="vertical-align: inherit;"class="lembre-texto">Login</font>
-                </font>
-            </h1 >
-            <div class="form-floating">
-                <input type="text" class="form-control" id="floatingInput" placeholder="nome@exemplo.com" name="nome">
-                <label for="floatingInput">
+        </div>
+        <main class="form-signin w-100 m-auto">
+            <form action="php/verificaLogin.php" method="post">
+                <img class="mb-4" src="assets/gatinha.png " alt="gatinha fofinha" width="150" height="150">
+                <h1 class="text-pink">
                     <font dir="auto" style="vertical-align: inherit;">
-                        <font dir="auto" style="vertical-align: inherit;">E-mail</font>
+                        <font dir="auto" style="vertical-align: inherit;" class="lembre-texto">Login</font>
                     </font>
-                </label>
-            </div>
-            <div class="form-floating"> 
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="senha"> 
-                    <label for="floatingPassword">
-                    <font dir="auto" style="vertical-align: inherit;">
-                        <font dir="auto" style="vertical-align: inherit;">Senha</font>
-                    </font>
-                </label> 
-            </div>
-            <div class="form-check text-start my-3"> 
-                <input class="form-check-input" type="checkbox" value="remember-me"id="checkDefault"> 
-                <label class="form-check-label" for="checkDefault">
-                    <font dir="auto" style="vertical-align: inherit;">
-                        
-                        <h1 class="text-pink lembre-texto">Lembre de mim</h1>
-                    </font>
-                </label> 
-            </div> 
-            <button class="btn btn-primary w-100 py-2" type="submit">
-                <font dir="auto" style="vertical-align: inherit;">
-                    <font dir="auto" style="vertical-align: inherit;">Entrar</font>
-                </font>
-             
-            </button>
-            <p class="mt-5 mb-3 text-body-secondary">
-                <font dir="auto" style="vertical-align: inherit;">
-                </font>
-            </p>
-        </form>
-    </main>
-    <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        class="astro-vvvwv3sm"></script>
-    <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
-        style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
-        data-id="">
-        <div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
-            <div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img
-                    src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24"
-                    alt="">
-                <div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Texto original</div>
-            </div>
-            <div class="VIpgJd-yAWNEb-hvhgNd-k77Iif">
-                <div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div>
-            </div>
-            <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
-                <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
-                    <div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Avalie a tradução</div>
-                    <div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">O feedback vai ser usado para ajudar a melhorar o Google
-                        Tradutor</div>
+                </h1>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="nome@exemplo.com"
+                        name="nome">
+                    <label for="floatingInput">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">E-mail</font>
+                        </font>
+                    </label>
                 </div>
-                <div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button"
-                        class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Tradução boa" aria-label="Tradução boa"
-                        aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24"
-                                viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
-                                <path
-                                    d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
-                                </path>
-                            </svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24"
-                                viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
-                                <path
-                                    d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
-                                </path>
-                            </svg></span></button><button id="goog-gt-thumbDownButton" type="button"
-                        class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Tradução ruim" aria-label="Tradução ruim"
-                        aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24"
-                                viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
-                                <path
-                                    d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
-                                </path>
-                            </svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24"
-                                viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
-                                <path
-                                    d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
-                                </path>
-                            </svg></span></button></div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="senha">
+                    <label for="floatingPassword">
+                        <font dir="auto" style="vertical-align: inherit;">
+                            <font dir="auto" style="vertical-align: inherit;">Senha</font>
+                        </font>
+                    </label>
+                </div>
+                <div class="form-check text-start my-3">
+                    <input class="form-check-input" type="checkbox" value="remember-me" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault">
+                        <font dir="auto" style="vertical-align: inherit;">
+
+                            <h1 class="text-pink lembre-texto">Lembre de mim</h1>
+                        </font>
+                    </label>
+                </div>
+                <button class="btn btn-primary w-100 py-2" type="submit">
+                    <font dir="auto" style="vertical-align: inherit;">
+                        <font dir="auto" style="vertical-align: inherit;">Entrar</font>
+                    </font>
+
+                </button>
+                <p class="mt-5 mb-3 text-body-secondary">
+                    <font dir="auto" style="vertical-align: inherit;">
+                    </font>
+                </p>
+            </form>
+        </main>
+        <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            class="astro-vvvwv3sm"></script>
+        <div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+            style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
+            data-id="">
+            <div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+                <div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img
+                        src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24"
+                        alt="">
+                    <div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Texto original</div>
+                </div>
+                <div class="VIpgJd-yAWNEb-hvhgNd-k77Iif">
+                    <div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div>
+                </div>
+                <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+                    <div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+                        <div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Avalie a tradução</div>
+                        <div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">O feedback vai ser usado para ajudar a melhorar o
+                            Google
+                            Tradutor</div>
+                    </div>
+                    <div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button"
+                            class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Tradução boa" aria-label="Tradução boa"
+                            aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
+                                    </path>
+                                </svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
+                                    </path>
+                                </svg></span></button><button id="goog-gt-thumbDownButton" type="button"
+                            class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Tradução ruim" aria-label="Tradução ruim"
+                            aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
+                                    </path>
+                                </svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24"
+                                    viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+                                    <path
+                                        d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
+                                    </path>
+                                </svg></span></button></div>
+                </div>
+                <div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+                    <form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib"
+                        method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text"
+                            name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl"
+                            id="goog-gt-votingInputTrgLang"><input type="text" name="query"
+                            id="goog-gt-votingInputSrcText"><input type="text" name="gtrans"
+                            id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote">
+                    </form><iframe name="votingFrame" frameborder="0"></iframe>
+
+                </div>
             </div>
-            <div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
-                <form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib"
-                    method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl"
-                        id="goog-gt-votingInputSrcLang"><input type="text" name="tl"
-                        id="goog-gt-votingInputTrgLang"><input type="text" name="query"
-                        id="goog-gt-votingInputSrcText"><input type="text" name="gtrans"
-                        id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote">
-                </form><iframe name="votingFrame" frameborder="0"></iframe>
-
+        </div>
+            <!--Botão do whatsapp-->
+            <div class="whatsapp">
+                <a href="https://wa.me/5521965377743/" target="_blank">
+                    <img src="assets/whatsapp.png" alt="Botão para entrar em contato com o whatsapp">
+                </a>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <div class="whatsapp">
-            <a href="https://wa.me/5521965377743/" target="_blank">
-                <img src="assets/whatsapp.png" alt="Botão para entrar em contato com o whatsapp">
-            </a>
-        </div>
-        <!--Botão do instagram-->
-        <div class="instagram">
-            <a href="https://www.instagram.com/anna_1985_2004/" target="_blank">
-                <img src="assets/instagram.png" alt="Botão para acessar o instagram">
-            </a>
-        </div>
+            <!--Botão do instagram-->
+            <div class="instagram">
+                <a href="https://www.instagram.com/anna_1985_2004/" target="_blank">
+                    <img src="assets/instagram.png" alt="Botão para acessar o instagram">
+                </a>
+            </div>
 
-        <!-- Footer(Rodapé) -->
-        <footer class="py-5 bg-dark w-100">
-            <p class="m-0 text-center text-white">
-                &copy;2025 Mimi Lovers Shop🐾 — Todos os direitos reservados.
-            </p>
-        </footer>
+            <!-- Footer(Rodapé) -->
+            <footer class="py-5 bg-dark">
+                <div class="container">
+                    <p class="m-0 text-center text-white">&copy;2025 Mimi Lovers Shop🐾 — Todos os direitos reservados.</p>
+                </div>
+            </footer>
 
-        <!-- JavaScript do Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- JavaScript principal do tema -->
-        <script src="js/scripts.js"></script>
-    </div>
+            <!-- JavaScript do Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- JavaScript principal do tema -->
+            <script src="js/scripts.js"></script>
+            
+        </div>
 </body>
 
 </html>

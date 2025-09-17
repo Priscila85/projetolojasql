@@ -18,7 +18,8 @@
     background-color: aqua;
 }
 .bg-topo{
- background-color: black;
+ background-color: black; /* cor de fundo */
+ 
 }
 .texto-rosa {
     color: #FF69B4;
@@ -86,5 +87,10 @@ footer {
 .lembre-texto {
   font-size: 20px;   /* aumenta o tamanho da letra */
      /* deixa em negrito, opcional */
+  
+}
+
+.card {
+  border: none !important; /* remove todas as bordas */
   
 }
