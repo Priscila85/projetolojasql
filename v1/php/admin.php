@@ -28,16 +28,13 @@
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand mi-bolder" href="#!">Mimi Lovers Shop</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                     <li class="nav-item"><a class="nav-link texto-rosa" href="sobre.html" target="_blank">Sobre</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Comprar</a>
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Comprar</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item texto-rosa" href="#!">Todos os produtos</a></li>
                             <li>
@@ -54,7 +51,7 @@
                 <form class="d-flex">
                     <?php
                     session_start(); // Inicia a sessão para acessar as variáveis de sessão
-                    echo "<span style='color: #ff3399;'>". $_SESSION['nome']. "</span>"; // Exibe o nome do usuário logado
+                    echo "<span style='color: #ff3399;'>" . $_SESSION['nome'] . "</span>"; // Exibe o nome do usuário logado
                     ?>
                     <button class="btn btn-outline-dark" type="submit">
                         <i class="bi-cart-fill me-1"></i>
@@ -69,17 +66,20 @@
     //criar a query para listar os produtos
     $sql = "SELECT * FROM produtos";
     //executar a query
-    $listar = $conexao->query($sql); 
+    $listar = $conexao->query($sql);
     //transformar o resultado em um array
     //mostra o resultado na tela
-    if($listar->num_rows > 0) {
+    if ($listar->num_rows > 0) {
         //tem produto
-        while($linha = $listar->fetch_assoc()) {
+        echo '<section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">';
+        while ($linha = $listar->fetch_assoc()) {
             //mostrar os dados na tela
             echo '
                 <div class="col mb-5">
                     <div class="card h-100 mi-bolder cor-corpo">
-                        <img class="card-img-top" src="assets/' . $linha["imagem"] . '"
+                        <img class="card-img-top" src="../assets/' . $linha["imagem"] . '"
                             alt="Bolsa ecológica com a frase Gato é perfeito, afinal errar é humano." />
                         <div class="card-body p-4">
                             <div class="text-center text-pink">
@@ -94,9 +94,12 @@
                     </div>
                 </div>
             ';
-          
         }
-        
+        echo '
+                </div>
+            </div>
+        </section>
+        ';
     } else {
         echo "<br><p>Não tem produto cadastrado.</p>";
     }
