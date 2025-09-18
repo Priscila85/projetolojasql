@@ -18,7 +18,8 @@
     background-color: aqua;
 }
 .bg-topo{
- background-color: black;
+ background-color: black; /* cor de fundo */
+ 
 }
 .texto-rosa {
     color: #FF69B4;
@@ -45,5 +46,51 @@
     z-index: 1000; /* garante que fique por cima dos outros elementos */
     width: 40px;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* garante altura mínima da tela */
+  
+  
+}
+
+footer {
+  margin-top: auto; /* empurra o rodapé pro final */
+  width: 100%;
+  padding: 2rem 0; /* já tem no py-5 do bootstrap, mas reforça */
+}
  
+.bg-aqua {
+  background-color: aqua !important;
+}
+.btn-carrinho {
+  background-color: #FF69B4; /* rosa pink */
+  color: white;
+  border-color: #FF69B4;
+}
+
+.btn-carrinho:hover {
+  background-color: #ff85c1; /* rosa mais claro ao passar o mouse */
+  border-color: #ff85c1;
+}
+
+.badge-carrinho {
+  background-color: #f60f82; /* cor da badge */
+  color: white;
+}
+.lembre-texto {
+  font-size: 20px;   /* aumenta o tamanho da letra */
+     /* deixa em negrito, opcional */
+  
+}
+
+.card {
+  border: none !important; /* remove todas as bordas */
+  
+}

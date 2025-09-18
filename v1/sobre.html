@@ -12,7 +12,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/mystyle.css" rel="stylesheet">
     </head>
-    <body class="cor-corpo">
+    <body class="cor-corpo" class="d-flex flex-column min-vh-100 cor-corpo">
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-topo">
 
@@ -24,7 +24,7 @@
                     aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link texto-rosa" href="sobre.html" target="_blank">Sobre</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
@@ -40,31 +40,53 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
+                        <button class="btn btn-carrinho" type="submit">
                             <i class="bi-cart-fill me-1"></i>
                             Carrinho
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            <span class="badge badge-carrinho ms-1 rounded-pill">0</span>
                         </button>
                     </form>
                 </div>
             </div>
         </nav>
         <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center" style="height: calc(100vh - 80px);">
+            <div>
                 <h1 class="texto-rosa">Sobre a Coleção Exclusiva da Mimi Lovers Shop</h1>
-                <p class="lead text-roxo">Bem-vindo à Coleção Exclusiva da Mimi Lovers Shop — o cantinho oficial dos fãs da gatinha mais charmosa da internet! 🐱✨
-
+                <p class="lead text-roxo">
+                    Bem-vindo à Coleção Exclusiva da Mimi Lovers Shop — o cantinho oficial dos fãs da gatinha mais charmosa da internet! 🐱✨
                     Aqui você encontra os itens mais fofos, estilosos e autênticos inspirados na Mimi, feitos com carinho para quem ama espalhar alegria, cor e personalidade no dia a dia. Nossa coleção conta com camisetas, xícaras, acessórios e muito mais, tudo com estampas únicas e cheias de amor.
-                    
                     Cada produto foi pensado especialmente para os verdadeiros Mimi Lovers — pessoas que valorizam o charme, o estilo e a energia encantadora da nossa musa felina.
-                    </p>
+                </p>
                 <p class="text-roxo">Compre com o coração. Use com orgulho. Ame como a Mimi.</p>
             </div>
         </div>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <div class="whatsapp">
+            <a href="https://wa.me/5521965377743/" target="_blank">
+            <img src="assets/whatsapp.png" alt="Botão para entrar em contato com o whatsapp">
+            </a>
+        </div>
+        <!--Botão do instagram-->
+        <div class="instagram">
+            <a href="https://www.instagram.com/anna_1985_2004/" target="_blank">
+            <img src="assets/instagram.png" alt="Botão para acessar o instagram">
+        </a>
+        </div>
+    
+        <!-- Footer(Rodapé)-->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">&copy;2025 Mimi Lovers Shop🐾 — Todos os direitos reservados.</p>
+            </div>
+        </footer>
+        <!-- JavaScript do Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- JavaScript principal do tema -->
         <script src="js/scripts.js"></script>
     </body>
 </html>
