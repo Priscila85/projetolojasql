@@ -1,5 +1,3 @@
-<?php require("conexao.php"); ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -31,7 +29,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                     <li class="nav-item"><a class="nav-link texto-rosa" href="sobre.html" target="_blank">Sobre</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Comprar</a>
@@ -46,65 +44,50 @@
                         </ul>
 
                     </li>
-
                 </ul>
-                <form class="d-flex">
-                    <?php
-                    session_start(); // Inicia a sessão para acessar as variáveis de sessão
-                    echo "<span style='color: #ff3399;'>" . $_SESSION['nome'] . "</span>"; // Exibe o nome do usuário logado
-                    ?>
-                     <button class="btn btn-carrinho" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Carrinho
-                        <span class="badge badge-carrinho ms-1 rounded-pill">0</span>
-                    </button>
-                </form>
+
+              
             </div>
         </div>
     </nav>
-    <?php
-    //criar a query para listar os produtos
-    $sql = "SELECT * FROM produtos";
-    //executar a query
-    $listar = $conexao->query($sql);
-    //transformar o resultado em um array
-    //mostra o resultado na tela
-    if ($listar->num_rows > 0) {
-        //tem produto
-        echo '<section class="py-5">
-                <div class="container px-4 px-lg-5 mt-5">
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">';
-        while ($linha = $listar->fetch_assoc()) {
-            //mostrar os dados na tela
-            echo '
-<div class="col mb-5">
-    <div class="card h-100 mi-bolder cor-corpo">
-        <img class="card-img-top" src="../assets/' . $linha["imagem"] . '" alt="' . $linha["nome_produto"] . '" />
-        <div class="card-body p-4">
-            <div class="text-center text-pink">
-                <h5 class="mi-bolder">' . $linha["nome_produto"] . '</h5>
-                R$' . $linha["preco_unitario"] . '
-            </div>
-        </div>
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center">
-                <a class="btn btn-outline-dark mt-auto" href="#">Comprar</a>
-            </div>
-        </div>
-    </div>
-</div>';
+      <form method="POST" action="inserirProduto.php">
+      <!-- Formulário para cadastro -->
+                <p>Nome do Produto<input type="text" name="nome_produto"><p>
+                <p>Quantidade em Estoque<input type="number" name="qtd_em_estoque"><p>
+                <p>Preço Unitário<input type="text" name="preco_unitario"><p>
+                <p>Tamanho<input type="text" name="tamanho"><p>
+                <p>Imagem<input type="text" name="imagem"><p>
+                <input type="submit" value="Enviar" name="Enviar">
 
-        }
-        echo '
-                </div>
-            </div>
-        </section>
-        ';
-    } else {
-        echo "<br><p>Não tem produto cadastrado.</p>";
-    }
-    ?>
+
+                
+      <!--<p>
+        <label>Nome do Produto:</label><br>
+        <input type="text" name="nome_produto" placeholder="Nome do Produto" required>
+    </p>
+    <p>
+        <label>Quantidade em Estoque:</label><br>
+        <input type="number" name="qtd_em_estoque" placeholder="Quantidade" required>
+    </p>
+    <p>
+        <label>Preço Unitário:</label><br>
+        <input type="text" name="preco_unitario" placeholder="Preço Unitário" required>
+    </p>
+    <p>
+        <label>Tamanho:</label><br>
+        <input type="text" name="tamanho" placeholder="Tamanho">
+    </p>
+    <p>
+        <label>URL da Imagem:</label><br>
+        <input type="text" name="imagem" placeholder="URL da Imagem">
+    </p>
+    <p>
+        <button type="submit" class="btn btn-outline-dark">Cadastrar Produto</button>
+    </p>-->
+</form>
+
 
 </body>
 
 </html>
+

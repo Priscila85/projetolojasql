@@ -23,7 +23,7 @@ $procurar = $conexao->query($sql);
 //verifica se encontrou algum registro
 if ($procurar->num_rows > 0) {
     //caso o usuario e senha estejam corretos
-    //ele vai direcionar para a página 'admin.html'
+    //ele vai direcionar para a página 'admin.php'
    header("Location: admin.php");
 } else {
     //caso o usuario e senha estejam incorretos
