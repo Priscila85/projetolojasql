@@ -45,50 +45,53 @@
 
                     </li>
                 </ul>
+                <button class="btn btn-carrinho" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Carrinho
+                    <span class="badge badge-carrinho ms-1 rounded-pill">0</span>
+                </button>
 
-              
             </div>
         </div>
     </nav>
-      <form method="POST" action="inserirProduto.php">
-      <!-- Formulário para cadastro -->
-                <p>Nome do Produto<input type="text" name="nome_produto"><p>
-                <p>Quantidade em Estoque<input type="number" name="qtd_estoque"><p>
-                <p>Preço Unitário<input type="text" name="preco_unitario"><p>
-                <p>Tamanho<input type="text" name="tamanho"><p>
-                <p>Imagem<input type="text" name="imagem"><p>
-                <input type="submit" value="Enviar" name="Enviar">
+    <form method="POST" action="inserirProduto.php">
+        <!-- Formulário para cadastro -->
+        <!--< <p>Nome do Produto <input type="text" name="nome_produto"><p>
+                <p>Quantidade em Estoque <input type="number" name="qtd_estoque"><p>
+                <p>Preço Unitário   <input type="text" name="preco_unitario"><p>
+                <p>Tamanho   <input type="text" name="tamanho"><p>
+                <p>Imagem    <input type="text" name="imagem"><p>
+                <input type="submit" value="Enviar" name="Enviar">-->
 
 
 
-                
-      <!--<p>
-        <label>Nome do Produto:</label><br>
-        <input type="text" name="nome_produto" placeholder="Nome do Produto" required>
-    </p>
-    <p>
-        <label>Quantidade em Estoque:</label><br>
-        <input type="number" name="qtd_em_estoque" placeholder="Quantidade" required>
-    </p>
-    <p>
-        <label>Preço Unitário:</label><br>
-        <input type="text" name="preco_unitario" placeholder="Preço Unitário" required>
-    </p>
-    <p>
-        <label>Tamanho:</label><br>
-        <input type="text" name="tamanho" placeholder="Tamanho">
-    </p>
-    <p>
-        <label>URL da Imagem:</label><br>
-        <input type="text" name="imagem" placeholder="URL da Imagem">
-    </p>
-    <p>
-        <button type="submit" class="btn btn-outline-dark">Cadastrar Produto</button>
-    </p>-->
-</form>
+
+        <p><br>
+            <label>Nome do Produto:</label><br>
+            <input type="text" name="nome_produto" placeholder="Nome do Produto" required>
+        </p>
+        <p>
+            <label>Quantidade em Estoque:</label><br>
+            <input type="number" name="qtd_estoque" placeholder="Quantidade" required>
+        </p>
+        <p>
+            <label>Preço Unitário:</label><br>
+            <input type="text" name="preco_unitario" placeholder="Preço Unitário" required>
+        </p>
+        <p>
+            <label>Tamanho:</label><br>
+            <input type="text" name="tamanho" placeholder="Tamanho">
+        </p>
+        <p>
+            <label>URL da Imagem:</label><br>
+            <input type="text" name="imagem" placeholder="URL da Imagem">
+        </p>
+        <p>
+            <button type="submit" class="btn btn-outline-dark">Cadastrar Produto</button>
+        </p>
+    </form>
 
 
 </body>
 
 </html>
-

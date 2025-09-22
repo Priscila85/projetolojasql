@@ -48,7 +48,7 @@
                     </li>
 
                 </ul>
-                <form class="d-flex">
+                <form form class="d-flex" method="POST" action="addProduto.php">
                     <?php
                     session_start(); // Inicia a sessão para acessar as variáveis de sessão
                     echo "<span style='color: #ff3399;'>" . $_SESSION['nome'] . "</span>"; // Exibe o nome do usuário logado
@@ -63,18 +63,17 @@
         </div>
     </nav>
     <?php
-    //criar a query para listar os produtos
-    $sql = "SELECT * FROM produtos";
-    //executar a query
-    $listar = $conexao->query($sql);
-    //transformar o resultado em um array
-    //mostra o resultado na tela
-    if ($listar->num_rows > 0) {
-        //tem produto
+        // Criar a "query" para listar
+        $sql = "SELECT * FROM produtos";
+        // Executar a query
+        $listar = $conexao->query($sql);
+        // Mostra na tela os dados
+        if ($listar->num_rows > 0){
+            // Tem produto
         echo '<section class="py-5">
                 <div class="container px-4 px-lg-5 mt-5">
                     <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">';
-        while ($linha = $listar->fetch_assoc()) {
+         while($linha = $listar->fetch_assoc()){
             //mostrar os dados na tela
             echo '
 <div class="col mb-5">
