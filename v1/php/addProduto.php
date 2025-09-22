@@ -54,7 +54,7 @@
             </div>
         </div>
     </nav>
-    <form method="POST" action="inserirProduto.php">
+    <form action="inserirProduto.php" method="POST">
         <!-- Formulário para cadastro -->
         <!--< <p>Nome do Produto <input type="text" name="nome_produto"><p>
                 <p>Quantidade em Estoque <input type="number" name="qtd_estoque"><p>
@@ -86,9 +86,10 @@
             <label>URL da Imagem:</label><br>
             <input type="text" name="imagem" placeholder="URL da Imagem">
         </p>
-        <p>
+        <input type="submit" value="Enviar" name="Enviar">
+        <!--<p>
             <button type="submit" class="btn btn-outline-dark">Cadastrar Produto</button>
-        </p>
+        </p>-->
     </form>
 
 
