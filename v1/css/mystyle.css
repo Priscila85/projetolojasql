@@ -1,8 +1,8 @@
 .bg-pink {
     background-color: rgb(250, 129, 204);
-    background-image: url("../assets/gatinha.png");/* .. é para ir para a pasta raiz */
+    background-image: url("../assets/shamucats.gif");/* .. é para ir para a pasta raiz */
     background-repeat: no-repeat;
-    background-size: 18%;
+    background-size: 15%;
 }
 .mi-bolder {
     color: #ff69b4 ; /* rosa pink */
@@ -93,4 +93,8 @@ footer {
 .card {
   border: none !important; /* remove todas as bordas */
   
+}
+.gatinho {
+  margin-bottom: 1rem; /* equivale ao mb-4 */
+  max-width: 200px;
 }
